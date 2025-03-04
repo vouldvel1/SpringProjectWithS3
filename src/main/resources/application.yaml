@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: SpringProjectWithS3
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+
+cloud:
+  aws:
+    credentials:
+      accessKey: access-Key
+      secretKey: secret-Key
+    region:
+      static: region
+      endpoint: endpoint
+    s3:
+      bucket: bucket
+
+ServicePointManager:
+  DefaultConnectionLimit: 25
